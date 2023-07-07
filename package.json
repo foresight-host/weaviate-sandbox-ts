@@ -1,0 +1,13 @@
+{
+	"name": "weaviate-sandbox-ts",
+	"type": "module",
+	"main": "src/index.ts",
+	"module": "src/index.ts",
+	"types": "src/index.ts",
+	"devDependencies": {
+		"@ctx-core/env": "^17.2.121",
+		"@types/node": "^20.4.0",
+		"typescript": "^5.1.6",
+		"weaviate-ts-client": "^1.4.0"
+	}
+}
