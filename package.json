@@ -1,12 +1,16 @@
 {
-	"name": "weaviate-sandbox-ts",
+	"name": "@foresight-host/weaviate-sandbox-ts",
 	"type": "module",
 	"main": "src/index.ts",
 	"module": "src/index.ts",
 	"types": "src/index.ts",
+	"scripts": {
+		"1.7-hands-on": "./node_modules/.bin/tsx ./bin/1.7-hands-on.ts"
+	},
 	"devDependencies": {
 		"@ctx-core/env": "^17.2.121",
 		"@types/node": "^20.4.0",
+		"tsx": "^3.12.7",
 		"typescript": "^5.1.6",
 		"weaviate-ts-client": "^1.4.0"
 	}

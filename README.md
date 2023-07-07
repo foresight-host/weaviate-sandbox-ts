@@ -19,3 +19,9 @@ cp .env.sample .env
 # Populate environment values in .env
 direnv allow
 ```
+
+## Run code exercises
+
+```sh
+pnpm 1.7-hands-on
+```
