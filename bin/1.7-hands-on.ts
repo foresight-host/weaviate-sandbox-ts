@@ -16,14 +16,10 @@ async function main() {
 			"X-OpenAI-Api-Key": sandbox__env.OPENAI_API_KEY,
 		}
 	})
-	await client
+	const meta = await client.misc.metaGetter().do()
+	const schema = await client
 		.schema
 		.getter()
 		.do()
-		.then(res=>{
-			console.log(res)
-		})
-		.catch(err=>{
-			console.error(err)
-		})
+	console.info(JSON.stringify({ meta, schema }, null, 2))
 }
